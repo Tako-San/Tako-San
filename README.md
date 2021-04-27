@@ -1,6 +1,4 @@
-### Hi there 👋
-
-## Personal details
+## Hi there 👋
 
 I am Farid Khaidari. Study in MIPT DREC. Mail: [Khaidari.FG@pystech.edu](mailto:Khaidari.FG@pystech.edu)
 
