@@ -1,6 +1,8 @@
 ## Hi there 👋
 
-I am Farid Khaidari. Study in MIPT DREC. Mail: [Khaidari.FG@pystech.edu](mailto:Khaidari.FG@pystech.edu)
+I am Farid Khaidari. Study in MIPT DREC. Mail: [Khaidari.FG@pystech.edu](mailto:Khaidari.FG@pystech.edu).
+
+There is my [CV](https://drive.google.com/file/d/1d2Z7I5yuPGfKMqXnYQXLbEKeu24iBaHV/view?usp=sharing).
 
 ## Education
   * BSc. Applied math and physics in Moscow Institute of Physics and Technology. Undergraduated.
