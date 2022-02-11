@@ -12,8 +12,8 @@ There is my [CV](https://drive.google.com/file/d/1d2Z7I5yuPGfKMqXnYQXLbEKeu24iBa
   * "Industrial programming". MIPT course. Lecturer – I. Dedinsky.
 
 ## Projects
-  * [ParaCL](https://github.com/Tako-San/ParaCL). C-like language. Frontend -- Flex and Bison, backend -- LLVM.
-  * [Bitonic sort](https://github.com/Tako-San/OpenCL). Array sort with using GPU (OpenCL).
+  * [ParaCL](https://github.com/106-inc/ParaCL). C-like language. Frontend -- Flex and Bison, backend -- LLVM.
+  * [Bitonic sort](https://github.com/106-inc/OpenCL). Array sort with using GPU (OpenCL).
   * [Matrix multiplication optimisation](https://github.com/Tako-San/MIPT-Huawei-student-lab). Matrix multiplication optimisation. Optimisation ways: transposing, loop unrolling, intrinsics, OpenCL.
 
 ## Languages
