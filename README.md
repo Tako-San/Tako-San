@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-I am Farid Khaidari. Study in MIPT DREC. Mail: [Khaidari.FG@pystech.edu](mailto:Khaidari.FG@pystech.edu).
+I am Farid Khaidari. Study in MIPT DREC. Mail: [Khaidari.FG@gmail.com](mailto:Khaidari.FG@gmail.com).
 
 There is my [CV](https://drive.google.com/file/d/1d2Z7I5yuPGfKMqXnYQXLbEKeu24iBaHV/view?usp=sharing).
 
