@@ -25,27 +25,27 @@
 
 %-------------------------------------------------- SETTINGS HERE --------------------------------------------------
 % Header settings
-\def \fullname {Dwight Schrute}
+\def \fullname {Farid Khaidari}
 \def \subtitle {}
 
 \def \linkedinicon {\faLinkedin}
-\def \linkedinlink {https://linkedin.com/in/dwight-schrute/}
-\def \linkedintext {/dwight-schrute}
+\def \linkedinlink {https://www.linkedin.com/in/farid-khaidari/}
+\def \linkedintext {/farid-khaidari}
 
-\def \phoneicon {\faPhone}
-\def \phonetext {+1-123-456-7890}
+% \def \phoneicon {\faPhone}
+% \def \phonetext {+1-123-456-7890}
 
 \def \emailicon {\faEnvelope}
-\def \emaillink {mailto:dschrute@dundermifflin.com}
-\def \emailtext {dschrute@dundermifflin.com}
+\def \emaillink {mailto:khaidari.fg@gmail.com}
+\def \emailtext {khaidari.fg@gmail.com}
 
 \def \githubicon {\faGithub}
-\def \githublink {https://github.com/dwight-schrute}
-\def \githubtext {/dwight-schrute}
+\def \githublink {https://github.com/Tako-San}
+\def \githubtext {/Tako-San}
 
-\def \websiteicon {\faGlobe}
-\def \websitelink {https://google.com/}
-\def \websitetext {dwightschrute.com}
+% \def \websiteicon {\faGlobe}
+% \def \websitelink {https://google.com/}
+% \def \websitetext {dwightschrute.com}
 
 \def \headertype {\doublecol} % \singlecol or \doublecol
 
@@ -175,11 +175,11 @@
 }
 
 \begin{document}
-%-------------------------------------------------- BEGIN HERE --------------------------------------------------
+%-------------------------------------------------- BEGIN HERE -------------------------------------------------
 
-%---------------------------------------------------- HEADER ----------------------------------------------------
+%---------------------------------------------------- HEADER ---------------------------------------------------
 
-\headertype{\linkedin}{\github}{\website}{\phone}{\email}{} % Set the order of items here
+\headertype{\email}{\linkedin}{\github}{}{}{}{} % Set the order of items here
 \vspace{-10pt} % Set a negative value to push the body up, and the opposite
 
 %-------------------------------------------------- EDUCATION --------------------------------------------------
@@ -187,90 +187,77 @@
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Scranton University}{1998 -- 1992}
-      {BA Business Administration}{Scranton, PA}
+      {Moscow Institute of Physics and Technology}{2019 -- 2024}
+      {BCs Applied math and physics}{Moscow}
   \resumeEntryEnd
 
-%-------------------------------------------------- EXPERIENCE --------------------------------------------------
-\section{\faPieChart}{Experience}
+%-------------------------------------------------- WORK EXPERIENCE -------------------------------------------
+\section{\faPieChart}{Work Experience}
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Dunder Mifflin}{May 2013 -- Present}
-      {Regional Manager}{Scranton, PA}
+      {Huawei}{July 2021 -- Present}
+      {Junior developer}{Moscow}
     \resumeItemListStart
-      \resumeItem {Maintained the highest sales average, despite the weak economy and obsolete product}
-      \resumeItem {Managed, inspired, and protected the Scranton branch from criminals and raccoons}
-      \resumeItem {Led the office to obtain immeasurable success and glory}
+      \resumeItem {Implemented new functionality to make pre-calculations}
+      \resumeItem {Implemented machine-independent IR optimizations}
+      \resumeItem {Solved problems with memory consumption}
     \resumeItemListEnd
   \resumeEntryEnd
 
-  \resumeEntryStart
-    \resumeEntryTSDL
-      {Dunder Mifflin}{Mar. 2008 -- Mar. 2013}
-      {Assistant (to the) Regional Manager}{Scranton, PA}
-    \resumeItemListStart
-      \resumeItem {Closed more sales with revenues totalling more profit than any other employee}
-      \resumeItem {Served as self-appointed enforcer of The Rules (policies and procedures manual)}
-      \resumeItem {Instituted "Schrute Bucks" reward system, immeasurably raising office morale}
-    \resumeItemListEnd
-  \resumeEntryEnd
+%-------------------------------------------------- STUDY EXPERIENCE ------------------------------------------
+\section{\faGraduationCap}{Study Experience}
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Staples}{Mar. 2008 -- Mar. 2008}
-      {Sales Associate}{Scranton, PA}
-    \resumeItemListStart
-        \resumeItem {Became the top salesman of the store within a one-month timespan}
-        \resumeItem {Made a record-high sales figure despite having an unfunny boss}
-        \resumeItem {Provided extraordinary and exceptional customer service to the masses}
-    \resumeItemListEnd
+      {Usages and application of C++ language}{2020 -- 2021}
+      {Lecturer -- K. Vladimirov, Intel}{MIPT, Moscow}
   \resumeEntryEnd
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Dunder Mifflin}{Mar. 2005 -- Mar. 2008}
-      {Assistant (to the) Regional Manager}{Scranton, PA}
-    \resumeItemListStart
-      \resumeItem {Acted as Regional Manager's eyes, ears, and right hand, overseeing and reporting on employee conduct}
-      \resumeItem {Provided services to the office such as martial arts and surveillance}
-      \resumeItem {Introduced new linen paper lines into the market, often closing sight-unseen sales}
-    \resumeItemListEnd
+      {Simulation tools of CP, OS and analysis of programs' behaviour}{2020 -- 2021}
+      {Lecturer -- I. Petushkov, Huawei}{MIPT, Moscow}
   \resumeEntryEnd
 
-
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Industrial programming}{2019 -- 2020}
+      {Lecturer -- I. Dedinsky}{MIPT, Moscow}
+  \resumeEntryEnd
 %-------------------------------------------------- PROJECTS --------------------------------------------------
 \section{\faFlask}{Projects}
 
   \resumeEntryStart
     \resumeEntryTD
-      {Schrute Farms (Bed and Breakfast)}{}
+      {\href{https://github.com/106-inc/Triangles}{Triangles}}{}
     \resumeItemListStart
-      \resumeItem {A beautiful resort that provides fun activites like tablemaking and mattress making.}
+      \resumeItem {Study project that detect intersecting triangles.}
     \resumeItemListEnd
   \resumeEntryEnd
 
   \resumeEntryStart
     \resumeEntryTD
-      {Dwight Schrute's Gym for Muscles}{}
+      {\href{https://github.com/106-inc/ParaCL}{ParaCL}}{}
     \resumeItemListStart
-      \resumeItem {A built-in gym inside the Dunder Mifflin office complex that will buy your tin for 5 cents a yard.}
+      \resumeItem {Compiler and interpreter for C-like language. Frontend -- Flex and Bison, backend - LLVM.}
     \resumeItemListEnd
   \resumeEntryEnd
 
   \resumeEntryStart
     \resumeEntryTD
-      {Sesame Avenue Daycare Center for Infants and Toddlers}{}
+      {\href{https://github.com/106-inc/ParaCL}{MatMul optimizations}}{}
     \resumeItemListStart
-      \resumeItem {A great daycare for infants with a focus on cognitive development.}
+      \resumeItem {Attempts to increase MatMul speed with using of relayout, loop unroll, intrinsics, GPU.}
     \resumeItemListEnd
   \resumeEntryEnd
 
 %-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
 \section{\faGears}{Skills}
  \resumeEntryStart
-  \resumeEntryS{Traits } {Hardworking, Alpha Male, Jackhammer, Merciless, Insatiable}
-  \resumeEntryS{Talents } {Karate (Black Belt), Jujitsu, Werewolf Hunting, Table Making}
+  \resumeEntryS{Programming } {C++, C, Python}
+  \resumeEntryS{Languages } {English (B2), Russian (native)}
+  \resumeEntryS{Extra}{Git, CMake, Linux, \LaTeX}
  \resumeEntryEnd
 
 \end{document}
