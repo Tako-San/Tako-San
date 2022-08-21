@@ -1,0 +1,263 @@
+%-------------------------------------
+% LaTeX Resume for Software Engineers
+% Author : Leslie Cheng
+% License : MIT
+%-------------------------------------
+
+\documentclass[letterpaper,12pt]{article}[leftmargin=*]
+
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  \usepackage[xetex]{hyperref}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[pdftex]{hyperref}
+\fi
+\usepackage{fontawesome}
+\usepackage[sfdefault,light]{FiraSans}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+%-------------------------------------------------- SETTINGS HERE --------------------------------------------------
+% Header settings
+\def \fullname {Farid Khaidari}
+\def \subtitle {}
+
+\def \linkedinicon {\faLinkedin}
+\def \linkedinlink {https://www.linkedin.com/in/farid-khaidari/}
+\def \linkedintext {/farid-khaidari}
+
+% \def \phoneicon {\faPhone}
+% \def \phonetext {+1-123-456-7890}
+
+\def \emailicon {\faEnvelope}
+\def \emaillink {mailto:khaidari.fg@gmail.com}
+\def \emailtext {khaidari.fg@gmail.com}
+
+\def \githubicon {\faGithub}
+\def \githublink {https://github.com/Tako-San}
+\def \githubtext {/Tako-San}
+
+% \def \websiteicon {\faGlobe}
+% \def \websitelink {https://google.com/}
+% \def \websitetext {dwightschrute.com}
+
+\def \headertype {\doublecol} % \singlecol or \doublecol
+
+% Misc settings
+\def \entryspacing {-0pt}
+
+\def \bulletstyle {\faAngleRight}
+
+% Define colours
+\definecolor{primary}{HTML}{000000}
+\definecolor{secondary}{HTML}{0D47A1}
+\definecolor{accent}{HTML}{263238}
+\definecolor{links}{HTML}{1565C0}
+
+%-------------------------------------------------------------------------------------------------------------------
+
+% Defines to make listing easier
+\def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
+\def \phone {\phoneicon \hspace{3pt}{ \phonetext}}
+\def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
+\def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
+\def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.1in}
+
+% Define the link colours
+\hypersetup{
+    colorlinks=true,
+    urlcolor=links,
+}
+
+% Set the margin alignment
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-------------------------
+% Custom commands
+
+% Sections
+\renewcommand{\section}[2]{\vspace{5pt}
+  \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
+}
+
+% Entry start and end, for spacing
+\newcommand{\resumeEntryStart}{\begin{itemize}[leftmargin=2.5mm]}
+\newcommand{\resumeEntryEnd}{\end{itemize}\vspace{\entryspacing}}
+
+% Itemized list for the bullet points under an entry, if necessary
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=4.5mm]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% Resume item
+\renewcommand{\labelitemii}{\bulletstyle}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Entry with title, subheading, date(s), and location
+\newcommand{\resumeEntryTSDL}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+      \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+% Entry with title and date(s)
+\newcommand{\resumeEntryTD}[2]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+% Entry for special (skills)
+\newcommand{\resumeEntryS}[2]{
+  \item[]\small{
+    \textbf{\color{primary}#1 }{ #2 \vspace{-6pt}}
+  }
+}
+
+% Double column header
+\newcommand{\doublecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[c]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l@{\hspace{1.5em}}l}
+        {\small#4} & {\small#1} \\
+        {\small#5} & {\small#2} \\
+        {\small#6} & {\small#3}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
+
+% Single column header
+\newcommand{\singlecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[b]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l}
+        {\small#1} \\
+        {\small#2} \\
+        {\small#3} \\
+        {\small#4} \\
+        {\small#5} \\
+        {\small#6}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
+
+\begin{document}
+%-------------------------------------------------- BEGIN HERE -------------------------------------------------
+
+%---------------------------------------------------- HEADER ---------------------------------------------------
+
+\headertype{\email}{\linkedin}{\github}{}{}{}{} % Set the order of items here
+\vspace{-10pt} % Set a negative value to push the body up, and the opposite
+
+%-------------------------------------------------- EDUCATION --------------------------------------------------
+\section{\faGraduationCap}{Education}
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Moscow Institute of Physics and Technology}{2019 -- 2024}
+      {BCs Applied math and physics}{Moscow}
+  \resumeEntryEnd
+
+%-------------------------------------------------- WORK EXPERIENCE -------------------------------------------
+\section{\faPieChart}{Work Experience}
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Huawei}{July 2021 -- Present}
+      {Junior developer}{Moscow}
+    \resumeItemListStart
+      \resumeItem {Implemented new functionality to make pre-calculations}
+      \resumeItem {Implemented machine-independent IR optimizations}
+      \resumeItem {Solved problems with memory consumption}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+%-------------------------------------------------- STUDY EXPERIENCE ------------------------------------------
+\section{\faGraduationCap}{Study Experience}
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Usages and application of C++ language}{2020 -- 2021}
+      {Lecturer -- K. Vladimirov, Intel}{MIPT, Moscow}
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Simulation tools of CP, OS and analysis of programs' behaviour}{2020 -- 2021}
+      {Lecturer -- I. Petushkov, Huawei}{MIPT, Moscow}
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Industrial programming}{2019 -- 2020}
+      {Lecturer -- I. Dedinsky}{MIPT, Moscow}
+  \resumeEntryEnd
+%-------------------------------------------------- PROJECTS --------------------------------------------------
+\section{\faFlask}{Projects}
+
+  \resumeEntryStart
+    \resumeEntryTD
+      {\href{https://github.com/106-inc/Triangles}{Triangles}}{}
+    \resumeItemListStart
+      \resumeItem {Study project that detect intersecting triangles.}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTD
+      {\href{https://github.com/106-inc/ParaCL}{ParaCL}}{}
+    \resumeItemListStart
+      \resumeItem {Compiler and interpreter for C-like language. Frontend -- Flex and Bison, backend - LLVM.}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTD
+      {\href{https://github.com/106-inc/ParaCL}{MatMul optimizations}}{}
+    \resumeItemListStart
+      \resumeItem {Attempts to increase MatMul speed with using of relayout, loop unroll, intrinsics, GPU.}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+%-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
+\section{\faGears}{Skills}
+ \resumeEntryStart
+  \resumeEntryS{Programming } {C++, C, Python}
+  \resumeEntryS{Languages } {English (B2), Russian (native)}
+  \resumeEntryS{Extra}{Git, CMake, Linux, \LaTeX}
+ \resumeEntryEnd
+
+\end{document}
