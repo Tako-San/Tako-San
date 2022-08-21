@@ -2,7 +2,7 @@
 
 I am Farid Khaidari. Study in MIPT DREC. Mail: [Khaidari.FG@gmail.com](mailto:Khaidari.FG@gmail.com).
 
-There is my [CV](https://drive.google.com/file/d/1d2Z7I5yuPGfKMqXnYQXLbEKeu24iBaHV/view?usp=sharing).
+There is my [CV](https://drive.google.com/file/d/15oEaoMcs0qcwxrCk3JJGi2ZP-qoPNDoO/view?usp=sharing).
 
 ## Education
   * BSc. Applied math and physics in Moscow Institute of Physics and Technology. Undergraduated.
@@ -18,7 +18,7 @@ There is my [CV](https://drive.google.com/file/d/1d2Z7I5yuPGfKMqXnYQXLbEKeu24iBa
   * [Matrix multiplication optimisation](https://github.com/Tako-San/MIPT-Huawei-student-lab). Matrix multiplication optimisation. Optimisation ways: transposing, loop unrolling, intrinsics, OpenCL.
 
 ## Languages
-  * ![cpp](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white) 
+  * ![cpp](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
   * ![c](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
   * ![py](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
