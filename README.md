@@ -3,7 +3,7 @@
 I am Farid Khaidari. Mail: [Khaidari.FG@gmail.com](mailto:Khaidari.FG@gmail.com).
 
 ## Education
-  * BSc. Applied math and physics in Moscow Institute of Physics and Technology. Undergraduated.
+  * BSc. Applied math and physics in Moscow Institute of Physics and Technology.
 
 ## Experience
   * "Uses and applications of C++ language". MIPT course. Lecturer – K. Vladimirov, Intel.
